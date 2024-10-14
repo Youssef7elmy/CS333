@@ -1,0 +1,140 @@
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEE5AC;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #FFCC99;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #FF6666;
+}
+
+/* Navigation Styles */
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFCC66;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.nav ul li {
+    list-style-type: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #66CCFF;
+}
+
+.nav ul li a:hover {
+    background-color: #FF99CC;
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFF5CC;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.content, .schedule ,.teacher-info , .announcements{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-img{
+width: 100%;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule th, .schedule td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.schedule th {
+    background-color: #FFCC66;
+}
+
+.schedule td {
+    background-color: #FFF5CC;
+}
+
+.activity-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+/* Footer */
+.footer {
+    background-color: #66CCFF;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content, .activities {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+@media (max-width: 500px) {
+
+    .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;   
+    }
+}       
